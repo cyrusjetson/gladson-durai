@@ -27,7 +27,41 @@
       background-color: #111;
     }
   </style>
+  <style>
+    .section {
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    .section h2 {
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      color: #666;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    #section1 {
+      padding: auto;
+    }
+
+    #section2 {
+      padding: auto;
+    }
+
+    #section3 {
+      padding: auto;
+    }
+
+    #section4 {
+      padding: auto;
+    }
   </style>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Awesome Website</title>
@@ -35,45 +69,146 @@
 </head>
 
 <body>
+  <script>
+    // JavaScript for smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
   <header>
     <ul>
 
-      <li><a href="">Home</a></li>
-      <li><a href="">About</a></li>
-      <li><a href="">Services</a></li>
-      <li><a href="">Contact</a></li>
+      <li><a href="#section1">Home</a></li>
+      <li><a href="#section2">About</a></li>
+      <li><a href="#section3">Services</a></li>
+      <li><a href="#section4">Contact</a></li>
 
     </ul>
   </header>
 
   <main>
-    <section>
-      <h1>Welcome to gladson Website</h1>
-      <p>Gladson's Website is a digital oasis for technology enthusiasts and aspiring web developers. With a passion for sharing knowledge and expertise, Gladson curates a collection of informative articles, tutorials, and resources to help individuals navigate the ever-evolving world of web development. From front-end frameworks to back-end languages, the website offers insights and practical guidance to master the art of coding. With a user-friendly interface and a commitment to fostering a supportive community, Gladson's Website serves as a virtual mentor, inspiring learners to unlock their full potential in the realm of web development. Embark on an exciting learning journey and join Gladson in harnessing the power of technology to create innovative and impactful digital experiences.</p>
-      <a href="#" class="button">Get Started</a>
-    </section>
+    <div id="section1">
+      <h1><u>Welcome to Gladson Website</u></h1>
+      <p>Gladson's Website is a digital oasis for technology enthusiasts and aspiring web developers. With a passion for
+        sharing knowledge and expertise, Gladson curates a collection of informative articles, tutorials, and resources
+        to help individuals navigate the ever-evolving world of web development. From front-end frameworks to back-end
+        languages, the website offers insights and practical guidance to master the art of coding. With a user-friendly
+        interface and a commitment to fostering a supportive community, Gladson's Website serves as a virtual mentor,
+        inspiring learners to unlock their full potential in the realm of web development. Embark on an exciting
+        learning journey and join Gladson in harnessing the power of technology to create innovative and impactful
+        digital experiences.</p>
+    </div>
 
-    <section>
-      <h2>About Us</h2>
-      <p>Gladson's Website is a platform dedicated to sharing knowledge and experiences about technology, web development, and design. With a focus on providing helpful resources, tutorials, and insights, this website aims to empower individuals in their learning journey. Led by Gladson, a passionate web developer and technology enthusiast, the website serves as a hub for connecting with like-minded individuals and creating a community of learners. From web development consultation to front-end and back-end development, as well as UI/UX design, Gladson's Website offers a range of services to cater to different needs. Whether you're seeking guidance, inspiration, or collaboration opportunities, this website provides a valuable resource. Feel free to explore the content and reach out to Gladson for any inquiries or collaborations. Together, let's embark on a journey of continuous growth and innovation in the digital realm.
+    <div id="section2">
+      <h1><u>About Us</u></h1>
+      <p>Gladson's Website is a platform dedicated to sharing knowledge and experiences about technology, web
+        development, and design. With a focus on providing helpful resources, tutorials, and insights, this website aims
+        to empower individuals in their learning journey. Led by Gladson, a passionate web developer and technology
+        enthusiast, the website serves as a hub for connecting with like-minded individuals and creating a community of
+        learners. From web development consultation to front-end and back-end development, as well as UI/UX design,
+        Gladson's Website offers a range of services to cater to different needs. Whether you're seeking guidance,
+        inspiration, or collaboration opportunities, this website provides a valuable resource. Feel free to explore the
+        content and reach out to Gladson for any inquiries or collaborations. Together, let's embark on a journey of
+        continuous growth and innovation in the digital realm.
       </p>
-    </section>
+      <h2>About Our Website</h2>
+      <p>
+        At Gladson's Website, users can find in-depth articles written by industry experts, offering insights, tips, and
+        practical solutions to common challenges. The platform also hosts interactive coding tutorials and exercises,
+        allowing visitors to enhance their programming skills through hands-on practice. Whether you are a beginner
+        looking to learn the basics or an experienced professional seeking to expand your knowledge, Gladson's Website
+        offers resources suitable for all skill levels.
+      </p>
+      <h2>
+        About Our Work
+      </h2>
+      <p>
+        Gladson's Website goes beyond providing information and resources; it also serves as a platform for
+        professionals and freelancers to showcase their work and connect with potential clients. The website features a
+        dedicated section where individuals can create personalized portfolios, highlighting their skills, expertise,
+        and previous projects.<br>
 
-    <section>
-      <h2>our service</h2>
-      <ul>
-        <div style="color: white;position: sticky;">
-          <li>Service 1</li><br>
-          <li>Service 2</li><br>
-          <li>Service 3</li>
-        </div>
-      </ul>
-    </section>
+        Professionals from various fields, such as web development, graphic design, content writing, and digital
+        marketing, can create an account on Gladson's Website and build a compelling portfolio to attract employers and
+        clients. The platform offers easy-to-use tools and templates, allowing users to customize their portfolios to
+        reflect their unique style and capabilities.<br>
 
-    <section>
-      <h2>Contact Us</h2>
-      <p>contact are not given</p>
-    </section>
+        In addition to showcasing work, Gladson's Website also facilitates networking and collaboration among
+        professionals. Users can join industry-specific communities, participate in forums, and engage in discussions
+        with like-minded individuals. This fosters a vibrant environment for knowledge-sharing, idea exchange, and
+        potential collaboration opportunities.<br>
+
+        Gladson's Website acts as a bridge between professionals and potential clients. Businesses and individuals
+        seeking services can browse through the portfolios, review the work samples, and connect directly with the
+        professionals they find suitable for their projects. The platform provides a secure and transparent
+        communication channel, enabling seamless collaboration between clients and service providers.<br>
+
+        Whether you're a freelancer looking to expand your client base or a business seeking talented professionals,
+        Gladson's Website offers a convenient and efficient platform to showcase work, connect with industry peers, and
+        establish fruitful professional relationships. It serves as a hub for the exchange of ideas, opportunities, and
+        collaborations, fostering a vibrant community of professionals passionate about their craft.
+
+      </p>
+    </div>
+
+    <div id="section3">
+      <h1><u>Our service</u></h1>
+      <p>
+        Gladson's Website is committed to providing a wide range of high-quality services to cater to the diverse needs
+        of its users. The platform offers a comprehensive suite of services, spanning various domains and industries.
+        Whether you're an individual, a small business, or a large enterprise, Gladson's Website has services tailored
+        to meet your requirements.
+      </p>
+      <h2>
+        Our Quality Services
+      </h2>
+      <p>
+        Furthermore, Gladson's Website provides consulting services to help businesses and individuals make informed
+        decisions and overcome challenges. Whether it's technology consulting, business strategy, or career guidance,
+        the experienced consultants at Gladson's Website offer valuable insights and advice to support clients in
+        achieving their objectives.<br>
+
+        For those seeking creative services, Gladson's Website offers graphic design and branding solutions. From
+        designing logos and marketing collateral to creating visually stunning graphics, the talented designers at
+        Gladson's Website bring ideas to life and help clients establish a strong and memorable brand presence.<br>
+
+        Overall, Gladson's Website is dedicated to delivering exceptional services that combine technical expertise,
+        creative flair, and a deep understanding of client needs. The team strives to exceed expectations, ensuring that
+        each service provided contributes to the success and growth of its users. With Gladson's Website, clients can
+        access reliable, professional, and innovative services that drive results and help them achieve their goals."
+
+      </p>
+
+
+      <li>Service 1</li><br>
+      <li>Service 2</li><br>
+      <li>Service 3</li>
+
+
+    </div>
+
+    <div id="section4">
+      <h1><u>Contact Us</u></h1>
+      <p>Additionally, you can stay connected with Gladson's Website through our social media channels. Follow us on
+        Twitter, Facebook, and Instagram to receive updates, latest news, and valuable content.<br>
+
+        We value your feedback and suggestions to improve our services. If you have any comments or ideas, you can also
+        use the contact form available on our website. Simply fill in your details and message, and we will get back to
+        you promptly.<br>
+
+        At Gladson's Website, we believe in providing excellent customer support and ensuring a seamless user
+        experience. We are here to address your questions, assist you in any way we can, and build a strong and lasting
+        relationship with our users. We look forward to hearing from you and serving your needs."</p>
+      <p>
+        Please note contacts are not given..
+      </p>
+    </div>
   </main>
 
   <footer>
